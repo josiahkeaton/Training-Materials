@@ -1,0 +1,52 @@
+% Formally establish Beamer theme package
+\ProvidesPackage{beamerthemeCEIT}
+
+% --------  Invoke presentation mode  ----------------
+\mode<presentation>
+
+% --------  Set color, inner theme, frame title formats, etc.  ------------
+\usecolortheme{CEITBeaver}
+\useinnertheme{circles}
+\setbeamerfont{frametitle}{size=\Large,series=\bfseries}
+
+% --------  Define behavior for theme option "minimal"  -----------
+\DeclareOptionBeamer{minimal}{
+    \setbeamertemplate{frametitle}
+    {
+        \nointerlineskip
+        \begin{beamercolorbox}[sep=0.3cm,ht=27pt,wd=\paperwidth]{frametitle}
+            \vbox{}\vskip-2ex%
+            \strut\insertframetitle\strut
+            \vskip-0.8ex%
+        \end{beamercolorbox}
+    } % Reference: https://bloerg.net/2012/06/21/customizing-the-frametitle-of-beamer-presentation.html
+    \logo{\includegraphics[width=2.2cm]{images/CEIT_Logo_80X80.png}}
+}
+
+% --------  Define behavior for theme option "sidebarleft"  -----------
+\DeclareOptionBeamer{sidebarleft}{
+    \useoutertheme[height=22pt,width=40pt,left]{sidebar}
+    \logo{  \makebox[22pt]{\hspace{1cm}\includegraphics[width=22pt]{images/CEIT_Logo_300X300.png}}
+ 
+        \makebox[9pt]
+        {\hspace{25cm}
+        \includegraphics[width=11.5pt]{images/logo_upng.png}}
+  
+          \makebox[8pt]
+        {\hspace{27cm}
+        \includegraphics[width=29pt]{images/C-DAC_LogoTransp.png}}
+  
+    }
+}
+
+
+\ProcessOptionsBeamer
+
+% --------  Set the font themes to be used here  -----------------
+%\usepackage{helvet}  % use Helvetica as text fonts
+
+% --------  Remove navigation symbols from appearing  ----------------
+\setbeamertemplate{navigation symbols}{}
+
+% --------  Invoke all mode
+\mode<all>

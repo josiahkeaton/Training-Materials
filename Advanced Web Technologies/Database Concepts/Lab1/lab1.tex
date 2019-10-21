@@ -3,6 +3,8 @@
 \usepackage{standalone}
 % ---------------  Define theme and color scheme  -----------------
 \usetheme[sidebarleft]{CEIT}  % 3 options: minimal, sidebarleft, sidebarright
+\usepackage{fontspec}
+\newfontfamily{\ps} [ Path = ./fonts/]{TypeWheel-Regular.ttf}
 
 %\setbeamertemplate{footline}[frame number]
 \setbeamertemplate{footline}[text line]{%
@@ -10,12 +12,12 @@
 \setbeamertemplate{navigation symbols}{}
 % ------------  Information on the title page  --------------------
 \title[PPT Title]
-{\bfseries{PPT Title}}
+{\bfseries{Database Concepts}}
 
-\subtitle{A brief overview}
+\subtitle{Lab Session 1}
 
-\author[TrainerName] %\& Managed]
-{TrainerName\inst{1} } %\and Managed\inst{2}}
+\author[Jishnu T U] %\& Managed]
+{Jishnu T U\inst{1} } %\and Managed\inst{2}}
 
 \institute[CEIT]
 {
@@ -58,15 +60,13 @@
 \end{frame}
 %---------------------------------------------------------
 
-\input{Slides/Section1.tex}
 
-\input{Slides/Section1_1.tex}
-%---------------------------------------------------------
-\input{Slides/Section2.tex}
-%---------------------------------------------------------
+\input{topic1.tex}
 
-\input{Slides/Section2_1.tex}
-%---------------------------------------------------------
-
+\input{topic2.tex}
+\input{topic3.tex}
+\input{example1.tex}
+\input{topic4.tex}
+\input{topic5.tex}
 
 \end{document}
