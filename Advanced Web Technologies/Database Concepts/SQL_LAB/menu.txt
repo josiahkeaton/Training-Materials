@@ -1,0 +1,64 @@
+	
+	Database Technologies
+		Database Server & Management Software (Optional - Developing purpose)
+		MS SQL server
+		MS Management Studio
+		Oracle Database Server
+			SQL* Plus
+		Oracle SQL Developer
+		Setting Up Software
+			
+	Database Objects 
+		Schema
+		Tables
+		Views
+		Sequence
+		Indexes
+	
+
+	SQL Commands
+	
+	DDL Commands	
+		Basic Operations
+		
+	Schema
+	
+	Tables
+		Inbuilt DataTypes
+		Constraints
+		Inbuilt Functions
+		
+	Database Design - Univerity_DB
+		
+	Sequence
+	
+	DML Commands 
+		Basic Operations
+	
+	DQL Commands
+		Grouping Things Together (Group By, Having Clause)
+		Set Operators (UNION, UNION ALL, INTERSECT, MINUS)
+		Subqueries
+		Joins
+		Set Operators (UNION, UNION ALL, INTERSECT, MINUS)]
+	
+	Indexes
+		
+	Views	
+		Types of Views
+		Creating Complex View
+		Using Temporary Tables
+	
+	DCL Commands
+	
+	TCL Commands
+
+	PL/SQL
+		Introduction to PL/SQL
+		PL/SQL Programming style
+		PL/SQL Program blocks
+		Cursors
+
+	Procedures & Functions
+	
+	Triggers
